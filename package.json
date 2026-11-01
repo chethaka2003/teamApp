@@ -1,0 +1,13 @@
+{
+  "name": "team-app-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mobile Summit Application Monorepo (Expo Frontend + FastAPI Backend)",
+  "scripts": {
+    "frontend": "npm --prefix apps/mobile run start",
+    "android": "npm --prefix apps/mobile run android",
+    "ios": "npm --prefix apps/mobile run ios",
+    "web": "npm --prefix apps/mobile run web",
+    "backend": "uvicorn app.main:app --reload --app-dir apps/backend"
+  }
+}

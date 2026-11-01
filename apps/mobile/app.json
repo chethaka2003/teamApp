@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Team_APP",
+    "slug": "team-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "teamapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.summit.teamapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Team APP to access your camera to scan QR codes."
+      }
+    },
+    "android": {
+      "package": "com.summit.teamapp",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-video",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Team APP to access your camera to scan QR codes."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
