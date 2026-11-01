@@ -14,7 +14,7 @@ import {
 } from '../types';
 
 export const API_BASE_URL =
-  process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.1.4:8000/api/v1';
+  process.env.EXPO_PUBLIC_API_URL ?? 'https://team.codesolutiontech.com/api/v1';
 
 let activeAccessToken: string | null = null;
 
